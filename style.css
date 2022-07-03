@@ -68,6 +68,7 @@ table {
     height: 100%;
     flex-grow: 1;
     flex-basis: 0;
+    flex-direction: row;
 }
 
 .a_content {
@@ -128,6 +129,12 @@ button {
     position: relative;
 }
 
+.content {
+    position: relative;
+    max-width: 1024px;
+    margin: 0px auto;
+    background: black;
+}
 
 
 
