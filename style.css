@@ -52,23 +52,23 @@ table {
 #header {
     border: 1px solid black;
     height: 40px;
+    padding-top:12px;
 }
 
 #header_wrap {
-    border: 1px solid red;
-    height: 100%;
-    width: 1024px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
+   display:flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding : 0px 100px 0px 100px;
+   align-items: center; 
 }
-
-.header_content {
-    border: 1px solid green;
-    height: 100%;
-    flex-grow: 1;
-    flex-basis: 0;
+.tmp{
+    display:flex;
     flex-direction: row;
+    align-items: center;
+}
+.header_content {
+   align-items: center;
 }
 
 .a_content {
