@@ -97,6 +97,7 @@ table {
     height: 146px;
     position: sticky;
     top: 0px;
+    background-color: white;
 }
 
 #middle_wrap {
@@ -202,7 +203,7 @@ button {
 
 .body_first {
     /* border: 1px solid rgb(255, 0, 0); */
-    position: relative;
+    position: static;
     height: 300px;
     margin: 0px auto;
     background: white;
@@ -220,7 +221,7 @@ button {
 .body_second {
     /* border: 1px solid rgb(55, 0, 255); */
     background: white;
-    position: relative;
+    position: static;
     margin: 16px auto 0px;
     height: 200px;
     display: flex;
@@ -228,7 +229,6 @@ button {
 }
 
 .body_content2 {
-    position: absolute;
     width: 1063px;
     height: 100%;
     display: block;
@@ -262,4 +262,9 @@ h2 {
     margin-bottom: 11px;
     flex-grow: 1;
     display: flex;
+}
+
+.product > img {
+    width: 196px;
+    height: 276px;
 }
