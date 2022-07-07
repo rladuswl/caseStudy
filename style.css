@@ -194,6 +194,7 @@ button {
     display: flex;
     align-items: center;
     position: relative;
+    font-size: 15px;
 }
 
 #body {
