@@ -1,11 +1,12 @@
 import React from 'react'
+import './style.css';
 
-const ProductList = () => {
+const Product = ({img}) => {
   return (
     <div class="product">
-      <img src="https://media.bunjang.co.kr/product/183206594_1_1654042021_w292.jpg" />
+      <img src={img} />
     </div>
   )
 }
 
-export default ProductList;
+export default Product;
