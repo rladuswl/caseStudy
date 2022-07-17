@@ -115,9 +115,9 @@ const Slide = () => {
     //<div className="SlickComponent">
     <StyledSlider {...settings}>
         <button className="slide-arrow prev-arrow"></button>
-        <SlickDiv img={"https://media.bunjang.co.kr/images/nocrop/844398082_w2058.jpg"}>
+        <SlickDiv img={data[0]}>
         </SlickDiv>
-        <SlickDiv img={"https://m.bunjang.co.kr/pc-static/media/appdownload-banner.75b0fd5a.png"}>
+        <SlickDiv img={data[1]}>
         </SlickDiv>
         <button className="slide-arrow next-arrow"></button>
     </StyledSlider>

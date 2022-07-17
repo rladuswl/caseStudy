@@ -1,8 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import './style.css';
-import './script';
-import Product from './script';
+import './product';
+import Product from './product';
 import Slide from './slider';
 
 function App() {
