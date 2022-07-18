@@ -88,19 +88,25 @@ const SlickDiv = styled.div`
     background: rgb(0, 0, 0);
 `;
 
+const img = styled.img`
+    width: 1063px;
+    height: 300px;
+    box-sizing: border-box;
+`;
+
 
 const Slide = () => {
-    const data = ['https://media.bunjang.co.kr/images/nocrop/844398082_w2058.jpg', 'https://m.bunjang.co.kr/pc-static/media/appdownload-banner.75b0fd5a.png'];
+    const data = ['https://media.bunjang.co.kr/images/nocrop/844398082_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/851515256_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/849662045_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/852789386_w2058.jpg'];
 
     //settings 부분, 슬라이더의 기능을 조정
     const settings = {
       dots: false,  // 점은 안 보이게
       infinite: true, // 무한 반복
-      speed: 800,
+      speed: 2000,
       slidesToShow: 1, //1장씩 보이게
       slidesToScroll: 1, //1장씩 넘어가도록
       autoplay: true,
-      autoplaySpeed: 800,
+      autoplaySpeed: 2000,
       cssEase: "linear"
     };
     return (
@@ -115,10 +121,18 @@ const Slide = () => {
     //<div className="SlickComponent">
     <StyledSlider {...settings}>
         <button className="slide-arrow prev-arrow"></button>
-        <SlickDiv img={data[0]}>
-        </SlickDiv>
-        <SlickDiv img={data[1]}>
-        </SlickDiv>
+        {/* <SlickDiv>
+        
+            {data.map((data) => {
+            return <img src={data} />;
+            })}
+            
+        </SlickDiv> */}
+        
+        {data.map((data) => {
+        return <SlickDiv> <img src={data} /> </SlickDiv>;
+        })}
+        
         <button className="slide-arrow next-arrow"></button>
     </StyledSlider>
     //</div>
