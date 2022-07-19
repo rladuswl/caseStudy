@@ -92,8 +92,8 @@ const img = styled.img`
     width: 1063px;
     height: 300px;
     box-sizing: border-box;
+    obje
 `;
-
 
 const Slide = () => {
     const data = ['https://media.bunjang.co.kr/images/nocrop/844398082_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/851515256_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/849662045_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/852789386_w2058.jpg'];
@@ -102,11 +102,11 @@ const Slide = () => {
     const settings = {
       dots: false,  // 점은 안 보이게
       infinite: true, // 무한 반복
-      speed: 2000,
+      speed: 3000,
       slidesToShow: 1, //1장씩 보이게
       slidesToScroll: 1, //1장씩 넘어가도록
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 3000,
       cssEase: "linear"
     };
     return (
@@ -120,7 +120,6 @@ const Slide = () => {
 
     //<div className="SlickComponent">
     <StyledSlider {...settings}>
-        <button className="slide-arrow prev-arrow"></button>
         {/* <SlickDiv>
         
             {data.map((data) => {
@@ -129,6 +128,8 @@ const Slide = () => {
             
         </SlickDiv> */}
         
+        <button className="slide-arrow prev-arrow"></button>
+
         {data.map((data) => {
         return <SlickDiv> <img src={data} /> </SlickDiv>;
         })}
