@@ -88,7 +88,7 @@ const SlickDiv = styled.div`
     background: rgb(0, 0, 0);
 `;
 
-const img = styled.img`
+const Img = styled.img`
     width: 1063px;
     height: 300px;
     box-sizing: border-box;
@@ -131,7 +131,7 @@ const Slide = () => {
         <button className="slide-arrow prev-arrow"></button>
 
         {data.map((data) => {
-        return <SlickDiv> <img src={data} /> </SlickDiv>;
+        return <SlickDiv> <Img src={data} /> </SlickDiv>;
         })}
         
         <button className="slide-arrow next-arrow"></button>
