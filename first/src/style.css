@@ -50,8 +50,9 @@ table {
 /* 시작 */
 
 #all {
-    height: 4202px;
-    width: 1263px;
+    height: 5000px;
+    width: 1300px;
+    border: 1px solid rgb(230, 227, 227);
 }
 
 #header {
@@ -340,8 +341,10 @@ h2 {
 
 .banner_four {
     margin-bottom: 0px;
-    padding: 0px;
+    width: 100%;
+    padding: 10px;
     border-color: rgb(229, 229, 229);
+    border: 1px solid rgb(204, 204, 204);
 }
 
 .first {

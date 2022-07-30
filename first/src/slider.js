@@ -67,6 +67,7 @@ const SlickDiv = styled.div`
     width: 1063px;
     height: 300px;
     box-sizing: border-box;
+    
     ${(props) => {
         const img = props.img;
         return css`
@@ -75,11 +76,12 @@ const SlickDiv = styled.div`
         `;
     }}
 
-    animation-duration: 10s;
-    animation-timing-function: ease-out;
+    animation-duration: 40s;
+    animation-timing-function: linear;
     animation-name: ${SlickDivAnimation};
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
+    animation-delay: 0ms;
 
     display: flex;
     justify-content: center;
@@ -92,21 +94,25 @@ const Img = styled.img`
     width: 1063px;
     height: 300px;
     box-sizing: border-box;
-    obje
+    position: static;
+    margin: 0px auto;
+    background: white;
+    display: flex;
+    justify-content: center;
 `;
 
 const Slide = () => {
-    const data = ['https://media.bunjang.co.kr/images/nocrop/844398082_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/851515256_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/849662045_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/852789386_w2058.jpg'];
+    const data = ['https://media.bunjang.co.kr/images/nocrop/844398082_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/851515256_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/849662045_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/852789386_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/844398082_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/851515256_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/849662045_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/852789386_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/844398082_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/851515256_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/849662045_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/852789386_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/844398082_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/851515256_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/849662045_w2058.jpg', 'https://media.bunjang.co.kr/images/nocrop/852789386_w2058.jpg'];
 
     //settings 부분, 슬라이더의 기능을 조정
     const settings = {
       dots: false,  // 점은 안 보이게
       infinite: true, // 무한 반복
-      speed: 3000,
+      speed: 5000,
       slidesToShow: 1, //1장씩 보이게
       slidesToScroll: 1, //1장씩 넘어가도록
       autoplay: true,
-      autoplaySpeed: 3000,
+      autoplaySpeed: 5000,
       cssEase: "linear"
     };
     return (

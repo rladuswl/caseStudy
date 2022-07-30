@@ -10,7 +10,7 @@ function App() {
   'https://media.bunjang.co.kr/product/192032730_1_1657001067_w292.jpg', 'https://media.bunjang.co.kr/product/192494933_1_1656902976_w292.jpg', 'https://media.bunjang.co.kr/product/192528735_1_1656923440_w292.jpg', 'https://media.bunjang.co.kr/product/192612989_1_1657004685_w292.jpg', 
   'https://media.bunjang.co.kr/product/192613001_1_1657004693_w292.jpg', 'https://media.bunjang.co.kr/product/192608325_1_1657001861_w292.jpg', 'https://media.bunjang.co.kr/product/192542170_1_1656931413_w292.jpg'];
   return (
-    <body>
+    
     <div id="all">
       <div id="header">
         <div id="header_wrap">
@@ -360,9 +360,7 @@ function App() {
           </div>
         </section>
       </div>
-    </div>
-    <script type="text/javascript" src="./script.js"></script>
-  </body>
+    </div>  
   );
 }
 
